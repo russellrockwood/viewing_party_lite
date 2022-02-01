@@ -1,0 +1,9 @@
+<h1>Register New User</h1>
+
+<%= form_with model: @user, local: true do |form| %>
+  <%= form.label :name, 'Name' %>
+  <%= form.text_field :name %>
+  <%= form.label :email, 'Email' %>
+  <%= form.text_field :email %>
+  <%= form.submit 'Register' %>
+<% end  %>
