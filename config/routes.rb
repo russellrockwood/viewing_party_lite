@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get '/register', to: 'landing#register'
 
   resources :users, only: [:new, :create, :show] do
-    resources :movies
+    resources :movies, only: [:index]
   end
 end
