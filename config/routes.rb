@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   root 'landing#index'
 
+  resources :users, only: [:show] do
+    resources :movies
+  end
 end
