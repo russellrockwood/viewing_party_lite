@@ -75,6 +75,50 @@
           null
         ]
       },
+      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/controllers/landing_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -86,14 +130,6 @@
         }
       },
       "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/jobs/application_job.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0
@@ -122,6 +158,6 @@
         }
       }
     },
-    "timestamp": 1643679255
+    "timestamp": 1643752968
   }
 }
