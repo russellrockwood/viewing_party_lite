@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'Landing Page', type: :feature do
   before(:each) do
-    visit '/'
+    visit root_path
   end
-  
+
   context 'When a user visits the root path' do
     scenario 'they are on the landing page' do
       expect(page).to have_current_path('/')
