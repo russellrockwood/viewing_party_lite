@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
 
-  def index
+  def discover
   end
 
 end
