@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Landing Page', type: :feature do
+RSpec.describe 'Register Page', type: :feature do
   before(:each) do
     visit '/register'
   end
@@ -22,12 +22,31 @@ RSpec.describe 'Landing Page', type: :feature do
       expect(page).to have_button('Register')
     end
 
-    scenario 'are redirected to user dashboard upon succesful registration' do
+    scenario 'they are redirected to user dashboard upon succesful registration' do
       fill_in 'Name', with: 'Lord Russell'
       fill_in 'Email', with: 'Russell@gmail.com'
       click_button 'Register'
 
       expect(page).to have_content("Lord Russell's Dashboard")
+    end
+
+    scenario 'they are redirected back to registration view if registration fails' do
+      fill_in 'Name', with: ''
+      fill_in 'Email', with: ''
+      click_button 'Register'
+
+      expect(current_path).to eq("/register")
+      expect(page).to have_content('User Not Created: Required info missing.')
+    end
+
+    scenario 'they are redirected back to registration view if email is already taken' do
+      User.create!(name: 'Bob', email: 'russell@gmail.com')
+      fill_in 'Name', with: 'Russell'
+      fill_in 'Email', with: 'russell@gmail.com'
+      click_button 'Register'
+
+      expect(current_path).to eq("/register")
+      expect(page).to have_content('User Not Created: Email Taken.')
     end
   end
 end
