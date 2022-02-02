@@ -33,6 +33,10 @@ RSpec.describe 'Movies Results Page', type: :feature do
         expect(page).to have_content('8.8')
       end
     end
+
+    scenario 'I see a link to return to the discover page' do
+      expect(page).to have_link('Discover', href: "/users/#{user_id}/discover")
+    end
   end
 
   context 'When I submit a search query on the discover page the firm' do
@@ -61,6 +65,10 @@ RSpec.describe 'Movies Results Page', type: :feature do
       within "#10315" do
         expect(page).to have_content('7.7')
       end
+    end
+
+    scenario 'I see a link to return to the discover page' do
+      expect(page).to have_link('Discover', href: "/users/#{user_id}/discover")
     end
   end
 end
