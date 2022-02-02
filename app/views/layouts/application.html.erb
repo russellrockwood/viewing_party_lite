@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <div>
+      <%= render partial: '/layouts/partials/home_button_and_app_name' %><br>
+    </div>
+
     <% flash.each do |type, notice| %>
         <div class="alert alert-info">
           <p><%= notice %></p>
