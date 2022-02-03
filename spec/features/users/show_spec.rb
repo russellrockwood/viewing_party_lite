@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'User Dashboard', type: :feature do
-  let!(:movie_1) { Movie.create!(title: 'Dark Phoenix') }
+  let!(:movie_1) { Movie.new(title: 'Dark Phoenix', id: 13245) }
   let!(:user_1) { User.create!(name: 'Ryan Steve', email: 'rsteve@gmail.com') }
-  let!(:view_party_1) { ViewParty.create!(user_id: user_1.id, movie_id: movie_1.id, start_date: '12-12-2022', start_time: '7:00 pm') }
+  let!(:party_1) { Party.create!(user_id: user_1.id, movie_id: movie_1.movie_id, start_date: '12-12-2022', start_time: '7:00 pm', duration: 190) }
 
   let(:user_id) {user_1.id}
 
@@ -22,8 +22,8 @@ RSpec.describe 'User Dashboard', type: :feature do
 
     scenario 'A section that lists viewing parties' do
       expect(page).to have_content('Viewing Parties')
-      expect(page).to have_content(view_party_1.start_date)
-      expect(page).to have_content(view_party_1.start_time)
+      expect(page).to have_content(party_1.start_date)
+      expect(page).to have_content(party_1.start_time)
     end
   end
 end
