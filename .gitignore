@@ -27,6 +27,8 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+./coverage
+/coverage
 ./coverage/*
 ./coverage/.last_run.json
 ./coverage/.resultset.json
@@ -35,3 +37,6 @@ coverage/*
 coverage/.last_run.json
 coverage/.resultset.json
 coverage/index.html
+
+# Ignore application configuration
+/config/application.yml

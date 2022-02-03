@@ -1,0 +1,390 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/qU4HDNKv7gjdlvMu74r70rISPwn.jpg",
+            "genre_ids": [
+                12,
+                16,
+                35,
+                10751
+            ],
+            "id": 10315,
+            "original_language": "en",
+            "original_title": "Fantastic Mr. Fox",
+            "overview": "The Fantastic Mr. Fox bored with his current life, plans a heist against the three local farmers. The farmers, tired of sharing their chickens with the sly fox, seek revenge against him and his family.",
+            "popularity": 31.53,
+            "poster_path": "/euZyZb6iGreujYKrGyZHRddhUYh.jpg",
+            "release_date": "2009-10-23",
+            "title": "Fantastic Mr. Fox",
+            "video": false,
+            "vote_average": 7.7,
+            "vote_count": 3911
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lNmIAX1IuPIEPMHhLBEm4wmhYX0.jpg",
+            "genre_ids": [
+                12,
+                16,
+                18,
+                10751
+            ],
+            "id": 10948,
+            "original_language": "en",
+            "original_title": "The Fox and the Hound",
+            "overview": "When a feisty little fox named Tod is adopted into a farm family, he quickly becomes friends with a fun and adorable hound puppy named Copper. Life is full of hilarious adventures until Copper is expected to take on his role as a hunting dog -- and the object of his search is his best friend!",
+            "popularity": 59.183,
+            "poster_path": "/aC3k6XBaYnulGSkK8263ABjU3Md.jpg",
+            "release_date": "1981-07-10",
+            "title": "The Fox and the Hound",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 2602
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tJRbPH8Q0divR3UkdpVxmNcd1YE.jpg",
+            "genre_ids": [
+                12,
+                16,
+                35,
+                10751
+            ],
+            "id": 9948,
+            "original_language": "en",
+            "original_title": "The Fox and the Hound 2",
+            "overview": "Best friends Tod, a fox kit, and Copper, a hound puppy, visit a country fair when they see a band of dogs called \"The Singin' Strays\". The band has five members: Dixie, Cash, Granny Rose, and twin brothers Waylon and Floyd. It is important that they perform well because a talent scout is visiting.",
+            "popularity": 79.606,
+            "poster_path": "/o3b8nenAzu5OJk7sbPJURwmeHSV.jpg",
+            "release_date": "2006-11-09",
+            "title": "The Fox and the Hound 2",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 525
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bfXekAz6OzhbbVFnYOobiSEXG9O.jpg",
+            "genre_ids": [
+                27
+            ],
+            "id": 430993,
+            "original_language": "en",
+            "original_title": "Fox Trap",
+            "overview": "After a terrible accident leaves a young girl disabled, five years later, the group responsible are invited to a remote manor house in the countryside for a class reunion. Little do they know, they are being targeted by a masked maniac hell bent on revenge.",
+            "popularity": 3.823,
+            "poster_path": "/ddM5hcau97E8lRnRwuf4SqliCFa.jpg",
+            "release_date": "2016-12-31",
+            "title": "Fox Trap",
+            "video": false,
+            "vote_average": 4.8,
+            "vote_count": 8
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/dK2Ob0D6fj8CHHiWVozjYgcXWUb.jpg",
+            "genre_ids": [
+                80,
+                35
+            ],
+            "id": 19137,
+            "original_language": "en",
+            "original_title": "After the Fox",
+            "overview": "A criminal mastermind sets up a phony film production as part of a plan to smuggle stolen gold.",
+            "popularity": 4.997,
+            "poster_path": "/n66MJNKW51LtyoE7OvsZ2oau3x2.jpg",
+            "release_date": "1966-01-01",
+            "title": "After the Fox",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 45
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/vMmVPRHDQZtte08o9vt3qOlEO15.jpg",
+            "genre_ids": [
+                16,
+                10751
+            ],
+            "id": 69101,
+            "original_language": "en",
+            "original_title": "The Fox Hunt",
+            "overview": "Donald controls the hounds , and Goofy is riding on Horace Horsecollar, as the fox outwits both of them.",
+            "popularity": 4.874,
+            "poster_path": "/kC5mx6APyqyayPB8F5wfebQMXM7.jpg",
+            "release_date": "1938-07-29",
+            "title": "The Fox Hunt",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 25
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 336157,
+            "original_language": "en",
+            "original_title": "Murnau, Borzage and Fox",
+            "overview": "Documentary focusing on the film careers F.W. Murnau, Frank Borzage and William Fox and their impact on the history of cinema.",
+            "popularity": 3.073,
+            "poster_path": null,
+            "release_date": "2008-12-09",
+            "title": "Murnau, Borzage and Fox",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 6
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ezfezjXNPKTFMFCpsAyoHQdozjq.jpg",
+            "genre_ids": [
+                28,
+                18,
+                36,
+                10752
+            ],
+            "id": 26205,
+            "original_language": "en",
+            "original_title": "The Desert Fox: The Story of Rommel",
+            "overview": "The life and career of Erwin Rommel and his involvement in the plot to assassinate Hitler.",
+            "popularity": 7.629,
+            "poster_path": "/kxGb2G3sW1au1biz9hHwJQb6w99.jpg",
+            "release_date": "1951-10-16",
+            "title": "The Desert Fox: The Story of Rommel",
+            "video": false,
+            "vote_average": 6.7,
+            "vote_count": 66
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/hfHwrU7rJB2kYoKJHT64nO1Euyp.jpg",
+            "genre_ids": [
+                16,
+                35
+            ],
+            "id": 57222,
+            "original_language": "en",
+            "original_title": "The Fox Hunt",
+            "overview": "It's morning in the English countryside and time for the gentry to participate in their favorite sport: the fox hunt. The eccentric gentlemen come in all shapes and sizes, the fat ones putting the greatest strain on the horses. The craziest things happen to the monocled hunters. One even gets knocked off his horse when it jumps over a brick wall. He shoots straight up into the air and, thanks to a parachute hidden in his clothes, makes a gentle landing. But instead of the ground, he lands on a cow. Upset by her unwanted passenger, she takes off at top speed, finally dumping him in a mud puddle, where he lands on a pig and continues his wacky ride. Meanwhile, the poor fox finally gets trapped in a hollow log. Dogs to the left of him, dogs to the right! Luckily, the beleaguered creature gets help from a certain powerful, and pungent, friend.",
+            "popularity": 3.242,
+            "poster_path": "/swTMaEKNTSFsRYvgyCrngsuqftO.jpg",
+            "release_date": "1931-11-20",
+            "title": "The Fox Hunt",
+            "video": false,
+            "vote_average": 4,
+            "vote_count": 11
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/vbqtgD1upkZEWaKeycW0SjPP4H2.jpg",
+            "genre_ids": [
+                35,
+                37
+            ],
+            "id": 54613,
+            "original_language": "en",
+            "original_title": "The Duchess and the Dirtwater Fox",
+            "overview": "A female hustler is chasing after rich men, but becomes repeatedly mixed up with a suave con man and card shark through a series of misadventures before falling in love with him.",
+            "popularity": 4.739,
+            "poster_path": "/lqxOQ38oVyCC78iROrF1T9qL47q.jpg",
+            "release_date": "1976-04-01",
+            "title": "The Duchess and the Dirtwater Fox",
+            "video": false,
+            "vote_average": 6.1,
+            "vote_count": 32
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                16
+            ],
+            "id": 39819,
+            "original_language": "en",
+            "original_title": "The Fox Chase",
+            "overview": "Oswald is with his mates in a fox hunt, but he finds his horse is stubborn and won't let him ride at first. Meanwhile, the sly fox outwits the dogs and riders in pursuit at every turn.",
+            "popularity": 2.832,
+            "poster_path": "/7ZqkdBvBdKVPyQAwopOdr0NSopb.jpg",
+            "release_date": "1928-06-24",
+            "title": "The Fox Chase",
+            "video": false,
+            "vote_average": 4.7,
+            "vote_count": 7
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/hcs3C3RLWKnXluxP77ZHm83wqTz.jpg",
+            "genre_ids": [
+                35,
+                10749
+            ],
+            "id": 239236,
+            "original_language": "en",
+            "original_title": "She's a Fox",
+            "overview": "Infatuated with the hottest girl in school, fifth-grader Cameron Sawyer puts everything on the line - including his mullet - to win the girl of his dreams.",
+            "popularity": 2.104,
+            "poster_path": "/xIPFX0qldyK03IGEPh2zz0mnRhh.jpg",
+            "release_date": "2009-07-26",
+            "title": "She's a Fox",
+            "video": false,
+            "vote_average": 8.1,
+            "vote_count": 4
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bmlr5Rj1ZHkezjm6f06vUXGTRI1.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 74896,
+            "original_language": "en",
+            "original_title": "The Fox",
+            "overview": "Jill Banford and Ellen March have built a good life together on a hardscrabble Canadian farm. Then handsome Paul Grenfell enters their isolated world, and sets friend against friend. But is Paul the real trouble between Jill and Ellen? Or has his presence merely awakened the unspoken, unexplored sexual tension that always existed between the women?",
+            "popularity": 1.693,
+            "poster_path": "/ixkcAOsLrLAKtP7Ppt39o0LES1y.jpg",
+            "release_date": "1967-12-13",
+            "title": "The Fox",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 12
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 22155,
+            "original_language": "hi",
+            "original_title": "Fox",
+            "overview": "Fox is an edge-of-the-seat suspense thriller that moves at high speed between the bustling metropolis of Bombay and the beautiful beaches of Goa.",
+            "popularity": 1.34,
+            "poster_path": "/cddhNK23HaP85IOc6TE3Zp7A389.jpg",
+            "release_date": "2009-09-04",
+            "title": "Fox",
+            "video": false,
+            "vote_average": 4.4,
+            "vote_count": 5
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                53,
+                80,
+                18
+            ],
+            "id": 412215,
+            "original_language": "en",
+            "original_title": "Fox",
+            "overview": "The thirteen-part series recounted the lives of the titular Fox family, who lived in Clapham in South London and had gangland connections.",
+            "popularity": 1.29,
+            "poster_path": null,
+            "release_date": "1980-03-10",
+            "title": "Fox",
+            "video": false,
+            "vote_average": 1,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/5m3iuO5ACGuOE15Gv1TXmNweXRK.jpg",
+            "genre_ids": [
+                37,
+                28
+            ],
+            "id": 42136,
+            "original_language": "en",
+            "original_title": "The Grey Fox",
+            "overview": "Old West highwayman Bill Miner, known to Pinkertons as \"The Gentleman Bandit,\" is released in 1901 after 33 years in prison, a genial and charming old man. Entering a world unfamiliar to him, he returns to the only thing that gives him purpose — robbery.",
+            "popularity": 2.426,
+            "poster_path": "/a8JMlIYiP6Ji3mr36btaJMUP2ad.jpg",
+            "release_date": "1982-12-16",
+            "title": "The Grey Fox",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 23
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                10770,
+                37
+            ],
+            "id": 115418,
+            "original_language": "en",
+            "original_title": "Black Fox",
+            "overview": "A former slave affects peace between Indian tribes and homesteaders in 1860s West Texas.",
+            "popularity": 1.474,
+            "poster_path": "/zsCb7ELjrtkqFQY2orIT2vCmhP5.jpg",
+            "release_date": "1995-07-28",
+            "title": "Black Fox",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 2
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                18,
+                10770
+            ],
+            "id": 88130,
+            "original_language": "en",
+            "original_title": "The Terry Fox Story",
+            "overview": "The true story about the Canadian cancer amputee hero who decided to run across Canada on only one leg to raise money for cancer research.",
+            "popularity": 2.431,
+            "poster_path": "/9qUt2VFw6KpjWKXAaVAh1E3Clpu.jpg",
+            "release_date": "1983-05-22",
+            "title": "The Terry Fox Story",
+            "video": false,
+            "vote_average": 6.2,
+            "vote_count": 13
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/twcVnPcpdOQW6NWCEl09Jbp6qrT.jpg",
+            "genre_ids": [
+                35
+            ],
+            "id": 711850,
+            "original_language": "en",
+            "original_title": "The Fox Hunter",
+            "overview": "A prominent Southern family of savage media moguls deteriorates at the crossroads of past and progress in matters of death, wealth, love, and American journalism.",
+            "popularity": 2.164,
+            "poster_path": "/nZNmYW6bax1MpQ8hcTdB8ioSWeC.jpg",
+            "release_date": "2020-06-05",
+            "title": "The Fox Hunter",
+            "video": false,
+            "vote_average": 5.3,
+            "vote_count": 3
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/rL8m6CkUoKwTfgcISaRJStU9PWQ.jpg",
+            "genre_ids": [
+                16
+            ],
+            "id": 235011,
+            "original_language": "en",
+            "original_title": "Fox-Terror",
+            "overview": "Foghorn's going fishing, but a fox has other plans for him. Posing as a racetrack tout, he suggests Foggy get a hunting dog and go hunting. Once the dog is gone, the fox comes after the chickens. One of them pulls the fox alarm, and the dog comes running back (too late). The fox next poses as a quiz show host, tricking Foghorn and the dog into blowing each other up. They go through another cycle or two of abuse before identifying their common enemy. They team up and go after him.",
+            "popularity": 1.4,
+            "poster_path": "/awzJrpdWhqlAztjdkRhWlqNCRON.jpg",
+            "release_date": "1957-05-10",
+            "title": "Fox-Terror",
+            "video": false,
+            "vote_average": 6.1,
+            "vote_count": 7
+        }
+    ],
+    "total_pages": 24,
+    "total_results": 480
+}
