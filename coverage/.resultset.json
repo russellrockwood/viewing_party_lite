@@ -1,125 +1,210 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/helpers/application_helper.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/models/cast_member.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/models/invite.rb": {
         "lines": [
           1,
           1,
+          null,
           1,
           null
         ]
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/models/invite.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/models/movie_cast.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/models/movie.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/models/review.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/models/user.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/models/party.rb": {
         "lines": [
           1,
           1,
-          1,
+          null,
+          null,
+          null,
           1,
           1,
           null
         ]
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/models/view_party.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/models/user.rb": {
         "lines": [
           1,
           1,
+          null,
           1,
           1,
           null
         ]
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/controllers/landing_controller.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/controllers/landing_controller.rb": {
         "lines": [
           1,
           1,
+          null,
+          1,
+          9,
+          null,
+          null
+        ]
+      },
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          null,
+          3,
+          1,
+          1,
+          2,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/controllers/movies_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          10,
+          5,
+          5,
+          5,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          20,
+          null,
+          null,
+          1,
+          23,
+          null,
+          null
+        ]
+      },
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/facades/movie_facade.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          20,
+          null,
+          null,
+          1,
+          5,
+          100,
+          null,
+          null,
+          null,
+          1,
+          5,
+          100,
+          null,
+          null,
+          null,
+          1,
+          30,
+          null,
+          null
+        ]
+      },
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/services/movie_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          10,
+          null,
           null,
           1,
           5,
           null,
+          5,
+          null,
+          5,
+          null,
+          null,
+          1,
+          5,
+          null,
+          5,
+          null,
+          5,
+          null,
+          5,
           null,
           null
         ]
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/controllers/application_controller.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/poros/movie.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          0,
-          0,
-          null,
-          null,
           null,
           1,
           null,
           null,
           null,
           1,
-          1,
-          1,
+          203,
+          203,
+          203,
+          null,
+          203,
+          203,
+          203,
           null,
           null,
           null
         ]
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/mailers/application_mailer.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -129,7 +214,7 @@
         "branches": {
         }
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/jobs/application_job.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/jobs/application_job.rb": {
         "lines": [
           0,
           0
@@ -137,7 +222,7 @@
         "branches": {
         }
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/channels/application_cable/connection.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -147,7 +232,7 @@
         "branches": {
         }
       },
-      "/Users/russellrockwood/Turing/3module/viewing_party_lite/app/channels/application_cable/channel.rb": {
+      "/Users/brad/Documents/Turing/Mod3/projects/viewing_party_lite/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -158,6 +243,6 @@
         }
       }
     },
-    "timestamp": 1643752968
+    "timestamp": 1643927726
   }
 }

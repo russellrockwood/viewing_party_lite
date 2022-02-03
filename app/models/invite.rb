@@ -1,4 +1,5 @@
 class Invite < ApplicationRecord
-  belongs_to :user
-  belongs_to :view_party
+  validates_presence_of :user_id,
+                        :party_id
+  belongs_to :party
 end
