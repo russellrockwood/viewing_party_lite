@@ -2,7 +2,7 @@ class MovieFacade
   attr_reader :service
 
   def initialize
-    @service = service
+    @service = start_service
   end
 
   def top_rated_movies
@@ -17,7 +17,7 @@ class MovieFacade
     end
   end
 
-  def service
+  def start_service
     @service = MovieService.new
   end
 end
