@@ -15,7 +15,11 @@ class Movie
     @vote_average = data[:vote_average]
     @poster_file_path = data[:poster_path]
     @summary = data[:overview]
-    @genres = data[:genres]
+    @genres = if data[:genres]
+                data[:genres]
+              else
+                []
+              end
     @genre_ids =  if data[:genre_ids]
                     data[:genre_ids]
                   else
