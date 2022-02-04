@@ -1,31 +1,44 @@
-<%= link_to 'Discover', "/users/#{@user.id}/discover" %>
-<%= button_to 'Create View Party', new_user_movie_party_path(@user.id, @movie.movie_id) %>
+<!DOCTYPE html>
+<html>
 
-<h1>Title: <%= @movie.title %></h1>
-<p>Vote Avergae: <%= @movie.vote_average %></p>
-<p>Runtime: <%= @movie.runtime_hour_conversion %></p>
-<ul>
-  <h3>Genres:</h3>
-  <% @movie_facade.find_genres(@movie.genre_ids).each do |genre| %>
-    <li><%= genre %></li>
-  <% end %>
-</ul>
+<head>
 
-<p>Summary: <%= @movie.summary %> </p>
+</head>
 
-<ul>
-  <h3>Cast Members:</h3>
-  <% @movie_facade.cast_members(@movie.movie_id).first(10).each do |member| %>
-    <li><p>Real Name: <%= member.name %></p>
-      <p>Character: <%= member.character %></p> </li>
-  <% end %>
-</ul>
+<body>
+  <nav>
+    <%= link_to 'Discover', "/users/#{@user.id}/discover" %>
+    <%= button_to 'Create View Party', new_user_movie_party_path(@user.id, @movie.movie_id) %>
+  </nav>
 
-<ul>
-  <% if @movie_facade.reviews(@movie.movie_id) != [] %>
-    <h3>Reviews:</h3>
-    <% @movie_facade.reviews(@movie.movie_id).each do |review| %>
-      <li>Author: <%= review[:author] %><br>Review: <%= review[:content] %></li>
+  <h1>Title: <%= @movie.title %></h1>
+  <p>Vote Avergae: <%= @movie.vote_average %></p>
+  <p>Runtime: <%= @movie.runtime_hour_conversion %></p>
+  <ul>
+    <h3>Genres:</h3>
+    <% @movie_facade.find_genres(@movie.genre_ids).each do |genre| %>
+      <li><%= genre %></li>
     <% end %>
-  <% end %>
-</ul>
+  </ul>
+
+  <p>Summary: <%= @movie.summary %> </p>
+
+  <ul>
+    <h3>Cast Members:</h3>
+    <% @movie_facade.cast_members(@movie.movie_id).first(10).each do |member| %>
+      <li><p>Real Name: <%= member.name %></p>
+        <p>Character: <%= member.character %></p> </li>
+    <% end %>
+  </ul>
+
+  <ul>
+    <% if @movie_facade.reviews(@movie.movie_id) != [] %>
+      <h3>Reviews:</h3>
+      <% @movie_facade.reviews(@movie.movie_id).each do |review| %>
+        <li>Author: <%= review[:author] %><br>Review: <%= review[:content] %></li>
+      <% end %>
+    <% end %>
+  </ul>
+
+</body>
+</html>
