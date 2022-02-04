@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe MovieFacade do
+RSpec.describe MovieFacade, type: :facade do
   let(:facade) { MovieFacade.new}
 
   before(:each) do
