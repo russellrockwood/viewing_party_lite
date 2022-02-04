@@ -8,7 +8,7 @@
 <body>
   <nav>
     <%= link_to 'Discover', "/users/#{@user.id}/discover" %>
-    <%= button_to 'Create View Party', new_user_movie_party_path(@user.id, @movie.movie_id) %>
+    <%= button_to 'Create View Party', new_user_movie_party_path(@user.id, @movie.movie_id), method: :get %>
   </nav>
 
   <h1>Title: <%= @movie.title %></h1>

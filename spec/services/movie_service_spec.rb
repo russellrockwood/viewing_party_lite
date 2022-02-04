@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe MovieService do
+RSpec.describe MovieService, type: :service do
   let(:service) { MovieService.new }
 
   describe '#top_rated' do
