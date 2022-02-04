@@ -1,15 +1,10 @@
 class MoviesController < ApplicationController
-  before_action :movie_facade, only: [:results]
-  before_action :set_user, only: [:discover, :results]
+  before_action :movie_facade, only: [:results, :show]
+  before_action :set_user, only: [:discover, :results, :show]
 
-  def discover
-    # @user = User.find(params[:user_id])
-    # @movies = @movie_facade.top_rated_movies
-  end
+  def discover;  end
 
   def results
-    # @user = User.find(params[:user_id])
-
     if params[:q] == 'top rated'
       @movies = movie_facade.top_rated_movies
     elsif params[:search]
@@ -18,12 +13,13 @@ class MoviesController < ApplicationController
   end
 
   def show
+    @movie = movie_facade.find_movie_by_id(params[:id])
   end
 
   private
 
   def movie_facade
-    movie_facade = MovieFacade.new
+    @movie_facade = MovieFacade.new
   end
 
   def set_user

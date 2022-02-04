@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get '/users/:user_id/results', to: 'movies#results'
 
   resources :users, only: [:new, :create, :show] do
-    resources :movies, only: [:show]
+    resources :movies, only: [:show] do
+      resources :parties, only: [:new, :create]
+    end
   end
 end
