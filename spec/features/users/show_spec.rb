@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'User Dashboard', type: :feature do
-  let!(:movie_1) { Movie.new(title: 'Dark Phoenix', id: 13245) }
+  let!(:movie_1) { Movie.new(title: 'Dark Phoenix', id: 13245, vote_average: 8.8, poster_path: '/user/path', overview: 'this is a movie', genre_ids: [28, 12], runtime: 134) }
   let!(:user_1) { User.create!(name: 'Ryan Steve', email: 'rsteve@gmail.com') }
   let!(:party_1) { Party.create!(user_id: user_1.id, movie_id: movie_1.movie_id, start_date: '12-12-2022', start_time: '7:00 pm', duration: 190) }
 
