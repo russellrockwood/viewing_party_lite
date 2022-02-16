@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+
     <title>ViewingPartyLite</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,15 +12,17 @@
   </head>
 
   <body>
-    <div>
-      <%= render partial: '/layouts/partials/home_button_and_app_name' %><br>
-    </div>
+    <div class="ui text container">
+      <div>
+        <%= render partial: '/layouts/partials/home_button_and_app_name' %><br>
+      </div>
 
-    <% flash.each do |type, notice| %>
-        <div class="alert alert-info">
-          <p><%= notice %></p>
-        </div>
-    <% end %>
+      <% flash.each do |type, notice| %>
+          <div class="alert alert-info">
+            <p><%= notice %></p>
+          </div>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>

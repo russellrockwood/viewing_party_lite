@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe CastMember do
-  let(:member) { CastMember.new(name: 'Ryan Stiles', character: 'Robby Stylin')}
+  let(:member) { CastMember.new(name: 'Ryan Stiles', character: 'Robby Stylin') }
   it 'exists' do
     expect(member).to be_instance_of CastMember
   end

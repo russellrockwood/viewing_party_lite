@@ -1,5 +1,4 @@
 class Movie
-
   attr_reader :title,
               :vote_average,
               :movie_id,
@@ -11,20 +10,12 @@ class Movie
 
   def initialize(data)
     @movie_id = data[:id]
-    @title = data[:title]
+    @title = data[:title].lowercase
     @vote_average = data[:vote_average]
     @poster_file_path = data[:poster_path]
     @summary = data[:overview]
-    @genres = if data[:genres]
-                data[:genres]
-              else
-                []
-              end
-    @genre_ids =  if data[:genre_ids]
-                    data[:genre_ids]
-                  else
-                    set_genre_ids
-                  end
+    @genres = data[:genres] || []
+    @genre_ids = data[:genre_ids] || set_genre_ids
     @runtime = data[:runtime]
   end
 

@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Movie do
-  let(:movie) { Movie.new(title: 'Dark Phoenix', vote_average: '8.8', id: '12345', poster_path: '/users/path', overview: 'This is a summary', genre_ids: [28, 16], runtime: 190) }
+  let(:movie) do
+    Movie.new(title: 'Dark Phoenix', vote_average: '8.8', id: '12345', poster_path: '/users/path',
+              overview: 'This is a summary', genre_ids: [28, 16], runtime: 190)
+  end
 
   it 'exists' do
     expect(movie).to be_instance_of Movie

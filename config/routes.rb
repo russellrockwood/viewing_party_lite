@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   get '/users/:user_id/discover', to: 'movies#discover'
   get '/users/:user_id/results', to: 'movies#results'
 
-  resources :users, only: [:new, :create, :show] do
+  resources :users, only: %i[new create show] do
     resources :movies, only: [:show] do
-      resources :parties, only: [:new, :create]
+      resources :parties, only: %i[new create]
     end
   end
 end

@@ -1,8 +1,8 @@
 class MoviesController < ApplicationController
-  before_action :movie_facade, only: [:results, :show]
-  before_action :set_user, only: [:discover, :results, :show]
+  before_action :movie_facade, only: %i[results show]
+  before_action :set_user, only: %i[discover results show]
 
-  def discover;  end
+  def discover; end
 
   def results
     if params[:q] == 'top rated'

@@ -4,36 +4,48 @@ RSpec.describe 'Movies Details Page', type: :feature do
   let!(:user_1) { User.create!(name: 'Ryan Steve', email: 'rsteve@gmail.com') }
 
   let(:user_id) { user_1.id }
-  let(:movie_id) { 730154 }
+  let(:movie_id) { 730_154 }
 
   before(:each) do
     top_rated_response = File.read('./spec/support/movie_api_responses/top_rated_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/top_rated?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(body: top_rated_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/top_rated?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(
+      body: top_rated_response, status: 200
+    )
 
     search_fox_response = File.read('./spec/support/movie_api_responses/search_fox_response.json')
 
     @query = 'Fox'
 
-    stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{ENV['movie_api_key']}&language=en-US&query=#{@query}&page=1&include_adult=false").to_return(body: search_fox_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{ENV['movie_api_key']}&language=en-US&query=#{@query}&page=1&include_adult=false").to_return(
+      body: search_fox_response, status: 200
+    )
 
     search_id_response = File.read('./spec/support/movie_api_responses/search_id_730154_response.json')
 
-    @movie_id = 730154
+    @movie_id = 730_154
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: search_id_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+      body: search_id_response, status: 200
+    )
 
     genres_response = File.read('./spec/support/movie_api_responses/genres_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/genre/movie/list?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: genres_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/genre/movie/list?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+      body: genres_response, status: 200
+    )
 
     credits_response = File.read('./spec/support/movie_api_responses/credits_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}/credits?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: credits_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}/credits?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+      body: credits_response, status: 200
+    )
 
     reviews_response = File.read('./spec/support/movie_api_responses/reviews_730154_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}/reviews?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(body: reviews_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}/reviews?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(
+      body: reviews_response, status: 200
+    )
 
     visit "/users/#{user_id}/results?q=top+rated"
 

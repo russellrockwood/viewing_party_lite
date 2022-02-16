@@ -11,8 +11,8 @@ RSpec.describe 'Landing Page', type: :feature do
     end
 
     scenario 'they see title of application' do
-      #set html class and find html later
-      expect(page).to have_content("Viewing Party Lite")
+      # set html class and find html later
+      expect(page).to have_content('Viewing Party Lite')
     end
 
     scenario 'they see button to create new user' do

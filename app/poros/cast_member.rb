@@ -6,5 +6,4 @@ class CastMember
     @name = data[:name]
     @character = data[:character]
   end
-
 end

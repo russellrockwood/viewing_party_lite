@@ -6,7 +6,7 @@ RSpec.describe 'Parties Create Page', type: :feature do
   let!(:user_3) { User.create!(name: 'Marcy Elliot', email: 'mcel@gmail.com') }
 
   let(:user_id) { user_1.id }
-  let(:movie_id) { 730154 }
+  let(:movie_id) { 730_154 }
 
   before(:each) do
     visit "/users/#{user_id}/results?q=top+rated"
@@ -45,11 +45,11 @@ RSpec.describe 'Parties Create Page', type: :feature do
     scenario 'I can see the event displayed on other user dashboards who were invited to the party'
   end
 
-#
-#  Duration of Party with a default value of movie runtime in minutes; a viewing party should NOT be created if set to a value less than the duration of the movie
-#  When: field to select date
-#  Start Time: field to select time
-#  Checkboxes next to each existing user in the system
-#  Button to create a party
-# Details When the party is created, the user should be redirected back to the dashboard where the new event is shown. The event should also be listed on any other user's dashbaords that were also invited to the party.
+  #
+  #  Duration of Party with a default value of movie runtime in minutes; a viewing party should NOT be created if set to a value less than the duration of the movie
+  #  When: field to select date
+  #  Start Time: field to select time
+  #  Checkboxes next to each existing user in the system
+  #  Button to create a party
+  # Details When the party is created, the user should be redirected back to the dashboard where the new event is shown. The event should also be listed on any other user's dashbaords that were also invited to the party.
 end

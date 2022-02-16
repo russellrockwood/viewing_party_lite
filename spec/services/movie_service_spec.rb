@@ -7,7 +7,9 @@ RSpec.describe MovieService, type: :service do
     it 'returns an array of data' do
       top_rated_response = File.read('./spec/support/movie_api_responses/top_rated_response.json')
 
-      stub_request(:get, "https://api.themoviedb.org/3/movie/top_rated?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(body: top_rated_response, status: 200)
+      stub_request(:get, "https://api.themoviedb.org/3/movie/top_rated?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(
+        body: top_rated_response, status: 200
+      )
 
       expect(service.top_rated).to be_a Array
 
@@ -29,7 +31,9 @@ RSpec.describe MovieService, type: :service do
 
       query = 'Fox'
 
-      stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{ENV['movie_api_key']}&language=en-US&query=#{query}&page=1&include_adult=false").to_return(body: search_fox_response, status: 200)
+      stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{ENV['movie_api_key']}&language=en-US&query=#{query}&page=1&include_adult=false").to_return(
+        body: search_fox_response, status: 200
+      )
 
       expect(service.search(query)).to be_a Array
 
@@ -49,9 +53,11 @@ RSpec.describe MovieService, type: :service do
     it 'returns data for a single movie searched for by id' do
       search_id_response = File.read('./spec/support/movie_api_responses/search_id_730154_response.json')
 
-      movie_id = 730154
+      movie_id = 730_154
 
-      stub_request(:get, "https://api.themoviedb.org/3/movie/#{movie_id}?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: search_id_response, status: 200)
+      stub_request(:get, "https://api.themoviedb.org/3/movie/#{movie_id}?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+        body: search_id_response, status: 200
+      )
 
       expect(service.find(movie_id)).to be_a Hash
 
@@ -68,7 +74,9 @@ RSpec.describe MovieService, type: :service do
     it 'returns a list of genres and their associated ids' do
       genres_response = File.read('./spec/support/movie_api_responses/genres_response.json')
 
-      stub_request(:get, "https://api.themoviedb.org/3/genre/movie/list?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: genres_response, status: 200)
+      stub_request(:get, "https://api.themoviedb.org/3/genre/movie/list?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+        body: genres_response, status: 200
+      )
 
       expect(service.genres).to be_a Array
 
@@ -84,9 +92,11 @@ RSpec.describe MovieService, type: :service do
     it 'returns the credits for a given movie' do
       credits_response = File.read('./spec/support/movie_api_responses/credits_response.json')
 
-      movie_id = 730154
+      movie_id = 730_154
 
-      stub_request(:get, "https://api.themoviedb.org/3/movie/#{movie_id}/credits?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: credits_response, status: 200)
+      stub_request(:get, "https://api.themoviedb.org/3/movie/#{movie_id}/credits?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+        body: credits_response, status: 200
+      )
 
       expect(service.credits(movie_id)).to be_a Hash
       expect(service.credits(movie_id)[:cast]).to be_a Array
@@ -102,9 +112,11 @@ RSpec.describe MovieService, type: :service do
     it 'returns the reviews for the movie by id' do
       reviews_response = File.read('./spec/support/movie_api_responses/reviews_730154_response.json')
 
-      movie_id = 730154
+      movie_id = 730_154
 
-      stub_request(:get, "https://api.themoviedb.org/3/movie/#{movie_id}/reviews?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(body: reviews_response, status: 200)
+      stub_request(:get, "https://api.themoviedb.org/3/movie/#{movie_id}/reviews?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(
+        body: reviews_response, status: 200
+      )
 
       expect(service.reviews(movie_id)).to be_a Hash
       expect(service.reviews(movie_id)[:results]).to be_a Array

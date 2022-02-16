@@ -1,40 +1,54 @@
 require 'rails_helper'
 
 RSpec.describe MovieFacade, type: :facade do
-  let(:facade) { MovieFacade.new}
+  let(:facade) { MovieFacade.new }
 
   before(:each) do
     top_rated_response = File.read('./spec/support/movie_api_responses/top_rated_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/top_rated?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(body: top_rated_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/top_rated?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(
+      body: top_rated_response, status: 200
+    )
 
     search_fox_response = File.read('./spec/support/movie_api_responses/search_fox_response.json')
 
     @query = 'Fox'
 
-    stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{ENV['movie_api_key']}&language=en-US&query=#{@query}&page=1&include_adult=false").to_return(body: search_fox_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{ENV['movie_api_key']}&language=en-US&query=#{@query}&page=1&include_adult=false").to_return(
+      body: search_fox_response, status: 200
+    )
 
     search_id_response = File.read('./spec/support/movie_api_responses/search_id_730154_response.json')
 
-    @movie_id = 730154
+    @movie_id = 730_154
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: search_id_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+      body: search_id_response, status: 200
+    )
 
     genres_response = File.read('./spec/support/movie_api_responses/genres_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/genre/movie/list?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: genres_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/genre/movie/list?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+      body: genres_response, status: 200
+    )
 
     credits_response = File.read('./spec/support/movie_api_responses/credits_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}/credits?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(body: credits_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}/credits?api_key=#{ENV['movie_api_key']}&language=en-US").to_return(
+      body: credits_response, status: 200
+    )
 
     reviews_response = File.read('./spec/support/movie_api_responses/reviews_730154_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}/reviews?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(body: reviews_response, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/#{@movie_id}/reviews?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(
+      body: reviews_response, status: 200
+    )
 
     reviews_response_2 = File.read('./spec/support/movie_api_responses/reviews_19404_response.json')
 
-    stub_request(:get, "https://api.themoviedb.org/3/movie/19404/reviews?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(body: reviews_response_2, status: 200)
+    stub_request(:get, "https://api.themoviedb.org/3/movie/19404/reviews?api_key=#{ENV['movie_api_key']}&language=en-US&page=1").to_return(
+      body: reviews_response_2, status: 200
+    )
   end
 
   it 'initializes with a service' do
@@ -96,9 +110,9 @@ RSpec.describe MovieFacade, type: :facade do
       expect(facade.reviews(@movie_id)).to be_a Array
       expect(facade.reviews(@movie_id).first).to eq(nil)
 
-      expect(facade.reviews(19404)).to be_a Array
+      expect(facade.reviews(19_404)).to be_a Array
 
-      facade.reviews(19404).each do |review|
+      facade.reviews(19_404).each do |review|
         expect(review).to have_key(:author)
         expect(review).to have_key(:content)
       end

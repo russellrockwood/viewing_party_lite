@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Review do
-  let(:review) { Review.new(author: 'Skillywiggles', content: 'I liked this movie')}
+  let(:review) { Review.new(author: 'Skillywiggles', content: 'I liked this movie') }
 
   it 'exists' do
     expect(review).to be_instance_of Review

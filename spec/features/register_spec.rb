@@ -11,7 +11,7 @@ RSpec.describe 'Register Page', type: :feature do
     end
 
     scenario 'they see a name input field' do
-      expect(page).to have_field("Name")
+      expect(page).to have_field('Name')
     end
 
     scenario 'they see an email input field' do
@@ -35,7 +35,7 @@ RSpec.describe 'Register Page', type: :feature do
       fill_in 'Email', with: ''
       click_button 'Register'
 
-      expect(current_path).to eq("/register")
+      expect(current_path).to eq('/register')
       expect(page).to have_content('User Not Created: Required info missing.')
     end
 
@@ -45,7 +45,7 @@ RSpec.describe 'Register Page', type: :feature do
       fill_in 'Email', with: 'russell@gmail.com'
       click_button 'Register'
 
-      expect(current_path).to eq("/register")
+      expect(current_path).to eq('/register')
       expect(page).to have_content('User Not Created: Email Taken.')
     end
   end

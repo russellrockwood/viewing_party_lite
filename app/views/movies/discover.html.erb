@@ -11,7 +11,7 @@
 
     <%= form_with url: "/users/#{@user.id}/results", method: :get, local: true do |f| %>
       <%= f.text_field :search, place_holder: 'Search Terms' %>
-      <%= f.submit 'Search' %>
+      <%= f.submit 'Search', class: 'ui blue button' %>
     <% end %>
   </div>
 </body>

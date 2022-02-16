@@ -1,5 +1,5 @@
 class PartiesController < ApplicationController
-  before_action :set_user, only: [:new, :create]
+  before_action :set_user, only: %i[new create]
   before_action :set_movie, only: [:new]
 
   def new
